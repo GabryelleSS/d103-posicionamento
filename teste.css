@@ -1,0 +1,37 @@
+/* body{
+    font-family: sans-serif;
+    margin: 0;
+} */
+
+p{
+    /* 
+    medida 'em' sempre vai ser em relação ao pai, o mais recomendado é usar 1rem para texto, 
+    pois é a fonte padrão do navegador.
+    Unidade de medida para fontes: em, rem, pt 
+    */
+    font-size: 1rem;
+    text-align: center;
+}
+
+.quadrado{
+    border: 5px solid black;
+    height: 300px;
+    /* Margin auto centraliza o elemento na página, porem não são todos os navegadores que se adaptam */
+    /* Unidade de medida em porcentagem é os 5% em relação a tag pai */
+    /* A unidade vw utiliza como base o tamanho da janela do navegador, recomendada para sites resposivos */
+    /* Unidade de medida para elementos: vw, vh */
+    /* margin: 5%; */
+    /* 
+    Para img, é recomendado utilizar apenas uma propriedade de medida, para o navegador adaptar. 
+    Se utilizar duas como Height ou Width, irá cortar a imagem, o que não é recomendado.
+    */
+    width: 50vw;
+}
+
+.banner{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIzxckWNVU8RNqn-ufHgOw2NdHvIJZ3ANUM2bpYgd3GxYdEfHZXQ);
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    width: 100vw;
+}

@@ -1,0 +1,57 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.grid{
+    display: grid;
+    /* unidade de medida para css grid: fr */
+    /*                   1/5   2/5  1/5  3/5 1/5  */
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    /* O ponto serve para deixar um espaço vazio */
+        "header header header header"
+        "main main . sidebar"
+        "main main . ."
+        "footer footer footer footer";
+}
+
+header{
+    align-items: center;
+    background-color: pink;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+header h3{
+    color: white;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    background-color: red;
+    grid-area: main;
+}
+
+.sidebar{
+    background-color: green;
+    grid-area: sidebar;
+}
+
+footer{
+    background-color: blue;
+    grid-area: footer;
+}
